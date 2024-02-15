@@ -48,10 +48,10 @@ function OrderManagement() {
     <div className="min-h-screen bg-gradient-to-br bg-cover bg-center" style={{backgroundImage: 'url("../images/bg.jpg")'}}>
       <div className="container mx-auto p-4">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-4 text-center text-yellow-400 drop-shadow-2xl">Order Management</h1>
+          <h1 className="text-6xl font-bold mb-4 text-center text-yellow-400 shadow-text-shadow">Order Management</h1>
           <div className="flex flex-wrap -mx-2">
             <div className="w-full lg:w-1/2 px-2 mb-4 lg:mb-0">
-              <h2 className="text-xl font-semibold mb-2 text-yellow-400">Create New Order</h2>
+              <h2 className="text-xl font-semibold mb-2 text-yellow-400 shadow-text-shadow">Create New Order</h2>
               <div className="flex flex-wrap -mx-2">
                 <div className="w-full lg:w-1/2 px-2 mb-2">
                   <input type="text" name="orderName" placeholder="Order Name" value={newOrder.orderName || ''} onChange={handleInputChange} className="px-2 py-1 drop-shadow-md rounded-md input" />
@@ -69,13 +69,13 @@ function OrderManagement() {
                   <input type="text" name="price" placeholder="Price" value={newOrder.price || ''} onChange={handleInputChange} className="px-2 py-1 rounded-md input" />
                 </div>
                 <div className="w-full px-2 mb-2">
-                  <button onClick={createOrder} className="btn drop-shadow-lg px-2 py-1 rounded-xl text-white shadow-xl bg-blue-900 hover:bg-pink-600 transition duration-300 ease-in-out">Add Order</button>
+                  <button onClick={createOrder} className="btn drop-shadow-lg px-2 py-1 rounded-xl shadow-text-shadow btn-shadow text-white shadow-xl bg-blue-900 hover:bg-pink-600 transition duration-300 ease-in-out">Add Order</button>
                 </div>
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-2">
               <div className=' text-right '>
-              <h2 className="text-xl font-semibold mb-2 text-yellow-400">Orders</h2>
+              <h2 className="text-xl font-semibold mb-2 text-yellow-400 shadow-text-shadow">Orders</h2>
               <ul>
                 {orders.map(order => (                 
                   <li key={order.id} className="mb-4 p-4 text-right bg-opacity-50 bg-orange-200 rounded-lg hover:bg-yellow-200 transition duration-300 ease-in-out">
@@ -84,7 +84,7 @@ function OrderManagement() {
                     <div>Status: {order.status}</div>
                     <div>Table Number: {order.tableNumber}</div>
                     <div>Price: {order.price}</div>
-                    <button onClick={() => deleteOrder(order.id)} className="btn  drop-shadow-lg px-2 py-1 rounded-xl shadow-md text-white bg-blue-900 hover:bg-pink-600 transition duration-300 ease-in-out">Delete</button>
+                    <button onClick={() => deleteOrder(order.id)} className="btn btn-shadow shadow-text-shadow drop-shadow-lg px-2 py-1 rounded-xl shadow-md text-white bg-blue-900 hover:bg-pink-600 transition duration-300 ease-in-out">Delete</button>
                   </li>
                 ))}
               </ul>
