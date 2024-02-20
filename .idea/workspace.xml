@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c20972c9-c58d-4d1c-a3f8-b0f9fbeb924e" name="Changes" comment="" />
+    <list default="true" id="c20972c9-c58d-4d1c-a3f8-b0f9fbeb924e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2cMjbB4aLFLLKrv6QtuUgFtSQSf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,12 +35,28 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/B Tech/SEM 6/Mini Project",
+    "last_opened_file_path": "D:/B Tech/SEM 6/Mini Project/Order",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,6 +66,11 @@
       <option name="presentableId" value="Default" />
       <updated>1707928410832</updated>
       <workItem from="1707928411900" duration="45000" />
+      <workItem from="1708352465547" duration="75000" />
+      <workItem from="1708352551498" duration="129000" />
+      <workItem from="1708352761626" duration="365000" />
+      <workItem from="1708353207790" duration="375000" />
+      <workItem from="1708353632913" duration="76000" />
     </task>
     <servers />
   </component>

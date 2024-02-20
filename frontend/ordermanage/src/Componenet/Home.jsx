@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import NavBar from './Navbar';
+
 
 function OrderManagement() {
   const [orders, setOrders] = useState([]);
@@ -33,18 +35,10 @@ function OrderManagement() {
     setNewOrder({ ...newOrder, [name]: value });
   };
 
-  const deleteOrder = async (orderId) => {
-    try {
-      await axios.delete(`http://localhost:8080/orders/${orderId}`);
-      setOrders(orders.filter(order => order.id !== orderId)); // Update the orders state after deletion
-      alert('Order deleted successfully!');
-    } catch (error) {
-      console.error('Error deleting order:', error);
-      alert('Failed to delete order. Please try again later.');
-    }
-  };
-
   return (
+    <>
+    
+    <NavBar/>
     <div className="min-h-screen bg-gradient-to-br bg-cover bg-center" style={{backgroundImage: 'url("../images/bg.jpg")'}}>
       <div className="container mx-auto p-4">
         <div className="mb-8">
@@ -73,27 +67,13 @@ function OrderManagement() {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 px-2">
-              <div className=' text-right '>
-              <h2 className="text-xl font-semibold mb-2 text-yellow-400 shadow-text-shadow">Orders</h2>
-              <ul>
-                {orders.map(order => (                 
-                  <li key={order.id} className="mb-4 p-4 text-right bg-opacity-50 bg-orange-200 rounded-lg hover:bg-yellow-200 transition duration-300 ease-in-out">
-                    <div className="font-semibold mb-2">Order Name: {order.orderName}</div>
-                    <div>Customer Name: {order.customerName}</div>
-                    <div>Status: {order.status}</div>
-                    <div>Table Number: {order.tableNumber}</div>
-                    <div>Price: {order.price}</div>
-                    <button onClick={() => deleteOrder(order.id)} className="btn btn-shadow shadow-text-shadow drop-shadow-lg px-2 py-1 rounded-xl shadow-md text-white bg-blue-900 hover:bg-pink-600 transition duration-300 ease-in-out">Delete</button>
-                  </li>
-                ))}
-              </ul>
-              </div>   
-            </div>
+            
           </div>
         </div>
       </div>
     </div>
+    
+    </>
   );
 }
 
