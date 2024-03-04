@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import { createBrowserRouter, createRoutesFromElements,Route } from 'react-router-dom';
-import OrdersPage from './Componenet/OrdersPage';
-import OrderManagement from './Componenet/Home';
+import OrdersPage from './Components/OrdersPage';
+import OrderManagement from './Components/Home';
 
 const router = createBrowserRouter (
   createRoutesFromElements(

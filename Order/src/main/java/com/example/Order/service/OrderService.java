@@ -40,6 +40,7 @@ public class OrderService {
             order.setStatus(orderDetails.getStatus());
             order.setTableNumber(orderDetails.getTableNumber());
             order.setPrice(orderDetails.getPrice());
+            order.setQuantity(orderDetails.getQuantity());
             return orderRepository.save(order);
         } else {
             return null;

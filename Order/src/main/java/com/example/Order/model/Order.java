@@ -24,11 +24,14 @@ public class Order {
     @Column(name = "price")
     private double price;
 
+    @Column(name = "quantity")
+    private int quantity;
+
 
     public Order() {
     }
 
-    public Order(String orderName, String customerName, String status, int tableNumber) {
+    public Order(String orderName, String customerName, String status, int tableNumber,double price) {
         this.orderName = orderName;
         this.customerName = customerName;
         this.status = status;
@@ -84,6 +87,16 @@ public class Order {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+
 }
 
 
