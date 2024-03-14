@@ -4,7 +4,9 @@ import NavBar from "./Navbar";
 
 function OrdersPage() {
   const [orders, setOrders] = useState([]);
-  const [selectedTable, setSelectedTable] = useState();
+  const [selectedTable, setSelectedTable] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState("");
+
   const [editingOrder, setEditingOrder] = useState(null);
 
   useEffect(() => {
@@ -32,11 +34,15 @@ function OrdersPage() {
   };
 
   const editOrder = (order) => {
-    setEditingOrder(order);
+    setEditingOrder({ ...order });
   };
 
   const handleTableSelect = (event) => {
-    setSelectedTable(parseInt(event.target.value));
+    setSelectedTable(event.target.value);
+  };
+
+  const handleTableStatus = (event) => {
+    setSelectedStatus(event.target.value);
   };
 
   const handleInputChange = (e, field) => {
@@ -67,10 +73,22 @@ function OrdersPage() {
   };
 
   const tableNumbers = [...new Set(orders.map((order) => order.tableNumber))];
+  const tableStatus = [...new Set(orders.map((order) => order.status))];
 
-  const filteredOrders = selectedTable
-    ? orders.filter((order) => order.tableNumber === selectedTable)
-    : orders;
+  const filteredOrders = orders.filter((order) => {
+    if (selectedTable && selectedStatus) {
+      return (
+        order.tableNumber === parseInt(selectedTable) &&
+        order.status === selectedStatus
+      );
+    } else if (selectedTable) {
+      return order.tableNumber === parseInt(selectedTable);
+    } else if (selectedStatus) {
+      return order.status === selectedStatus;
+    } else {
+      return true;
+    }
+  });
 
   return (
     <>
@@ -95,6 +113,19 @@ function OrdersPage() {
             {tableNumbers.map((tableNumber) => (
               <option key={tableNumber} value={tableNumber}>
                 {tableNumber}
+              </option>
+            ))}
+          </select>
+
+          <select
+            value={selectedStatus}
+            onChange={handleTableStatus}
+            className="px-2 py-1 rounded-md border ml-3 border-gray-300 focus:outline-none focus:border-blue-500"
+          >
+            <option value="">Status</option>
+            {tableStatus.map((status) => (
+              <option key={status} value={status}>
+                {status}
               </option>
             ))}
           </select>

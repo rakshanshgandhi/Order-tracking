@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c20972c9-c58d-4d1c-a3f8-b0f9fbeb924e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order/src/main/java/com/example/Order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/ordermanage/src/Components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/ordermanage/src/Components/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/B Tech/SEM 6/Mini Project/Order",
+    "last_opened_file_path": "D:/B Tech/SEM 6/Mini Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +69,7 @@
       <workItem from="1708352761626" duration="365000" />
       <workItem from="1708353207790" duration="375000" />
       <workItem from="1708353632913" duration="76000" />
+      <workItem from="1710413408843" duration="11000" />
     </task>
     <servers />
   </component>
