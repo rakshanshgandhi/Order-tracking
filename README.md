@@ -18,7 +18,7 @@ To install and run the Order Tracking System on your local machine, follow these
 
 1. Clone the repository:
 
-` git clone https://github.com/your-username/order-tracking-system.git `
+` git clone https://github.com/rakshanshgandhi/Order-tracking `
 
 2. Navigate to the backend directory:
 
